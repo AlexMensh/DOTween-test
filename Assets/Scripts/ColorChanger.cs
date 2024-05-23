@@ -9,7 +9,7 @@ public class ColorChanger : MonoBehaviour
 
     private MeshRenderer _meshRenderer;
 
-    void Start()
+    private void Start()
     {
         _meshRenderer = GetComponent<MeshRenderer> ();
 

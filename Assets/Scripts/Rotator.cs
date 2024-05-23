@@ -9,7 +9,7 @@ public class Rotator : MonoBehaviour
     [SerializeField] private LoopType _loopType;
     [SerializeField] private Ease _easeType;
 
-    void Start()
+    private void Start()
     {
         transform.DORotate(_endValue, _duration, RotateMode.LocalAxisAdd).SetLoops(_repeats, _loopType).SetEase(_easeType);
     }

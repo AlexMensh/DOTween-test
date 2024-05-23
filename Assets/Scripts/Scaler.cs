@@ -8,7 +8,7 @@ public class Scaler : MonoBehaviour
     [SerializeField] private int _repeats;
     [SerializeField] private LoopType _loopType;
 
-    void Start()
+    private void Start()
     {
         transform.DOScale(_endValue, _duration).SetLoops(_repeats, _loopType);
     }
